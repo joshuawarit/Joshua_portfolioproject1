@@ -1,0 +1,110 @@
+/* 
+
+display: flex;
+flex-direction: row | row-reverse | column | column-reverse;
+flex-wrap: wrap | nowrap | wrap-reverse;
+justify-content: start | end | center et al;
+
+
+*/
+
+/* ------ base and universal styles ----- */
+p {
+text-decoration: none;
+text-align: center;
+color-scheme: inherit;
+color:rgb(99, 157, 111);
+font-family:'Times New Roman', Times, serif;
+font-size: medium;
+margin: center;
+font-weight: bold;
+background: linear-gradient(to left, #acffdf14 0%,  #acffdf13 0% ); 
+}
+
+header{
+text-align: center;
+text-decoration: none;
+align-items: center;
+color-scheme: inherit;
+color:#365738;
+text-decoration-color: linear-gradient(to right #2e874a 0%, rgb(35, 57, 113) 50%, #988238 50%, #314e26 100%); 
+font-family:'Times New Roman', Times, serif;
+font-size: medium;
+margin: center;
+font-weight: bold;
+border: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+}
+nav{
+
+text-decoration: none; /* Removes the underline */
+color: inherit;      /* Makes link color the same as its parent text */
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+gap: 20px; /* Adjust the pixel value as needed */
+}
+
+footer{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(68, 126, 89);
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin: center;
+    color: rgb(145, 163, 201);
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+}
+
+section{
+    text-align: center; 
+           background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+
+}
+
+nav{
+text-decoration: none; /* Removes the underline */
+  color: inherit;      /* Makes link color the same as its parent text */
+  display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the pixel value as needed */
+}
+a:link, a:visited, a:hover, a:active {
+  color: inherit; /* This makes the link color the same as its parent element's text color */
+  text-decoration: none; /* This removes the underline */
+}
+a:hover {
+	text-decoration: overline;
+	color: #0d0d0d;
+	text-shadow: -1px -1px #659367;
+}
+
+.animated-text {
+    animation: color-change 170s infinite alternate;
+    font-size: 100px;
+    font-weight: bolder;
+    /* Apply the animation */
+}
+
+@keyframes color-change {
+    0% {color:rgb(96, 88, 43);}
+    30% {color:rgb(76, 109, 128);}
+    50% {color:rgb(81, 93, 151);}
+    70% {color:rgb(48, 91, 67);}
+    100% {color:#865a3f;}
+
+}
+
+image {
+    text-align: right;
+}
