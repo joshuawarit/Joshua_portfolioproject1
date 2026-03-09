@@ -63,7 +63,7 @@ color: rgb(0, 0, 0);
 text-decoration: none;
 }
 nav {
-    background-color: rgb(200, 200, 255);
+    background-color: rgb(170, 200, 255);
     color: black;
     border: thin;
     text-decoration: none;
@@ -143,4 +143,87 @@ font-size: 20pt;
     margin-left: auto;
     margin-right: auto;
 
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit; /* This makes the link color the same as its parent element's text color */
+  text-decoration: none; /* This removes the underline */
+}
+a:hover {
+	text-decoration: overline;
+	color: #0d0d0d;
+	text-shadow: -1px -1px #c2c2c2;
+}
+nav{
+text-decoration: none; /* Removes the underline */
+  color: inherit;      /* Makes link color the same as its parent text */
+  display: flex;
+    align-items: center;
+     justify-content: space-between;
+    gap: 20px; /* Adjust the pixel value as needed */
+}
+
+
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+.grid-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.2s; /* Optional: adds a hover effect */
+}
+.grid-container img:hover {
+    transform: scale(1.05); /* Optional: scales image on hover */
+}
+
+
+
+@media (max-width: 100px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+
+
+
+
+
+.container {
+    width: 100%;
+    overflow: hidden; /* Hides the text when it is outside the container */
+    background-color: #b6cafd;
+    padding: 10px 0;
+    border: none;
+    text-decoration: none;
+    border-style: none;
+    border: none;
+}
+
+.moving-text {
+    /* Apply the animation */
+    animation-name: marquee-animation;
+    animation-duration: 90s; /* Adjust speed as needed */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; /* Makes it loop forever */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    display: inline-block;
+    padding-left: 100%; /* Start the text off-screen to the right */
+}
+
+/* Define the animation movement */
+@keyframes marquee-animation {
+    0% {
+        transform: translateX(0); /* Initial position */
+    }
+    100% {
+        transform: translateX(-100%); /* Moves left by its own width */
+    }
 }

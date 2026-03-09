@@ -1,0 +1,95 @@
+p {
+text-decoration: none;
+text-align: center;
+color-scheme: inherit;
+color:black;
+font-family:'Times New Roman', Times, serif;
+font-size: medium;
+margin: center;
+font-weight: bold;
+background: linear-gradient(to right, #c1f0ff 0%, rgb(239, 240, 255) 50%, #e0e0ff 50%, #dcf5ff 100%); 
+}
+header{
+text-align: center;
+text-decoration: none;
+text-align: center;
+color-scheme: inherit;
+color:black;
+font-family:'Times New Roman', Times, serif;
+font-size: medium;
+margin: center;
+font-weight: bold;
+background: linear-gradient(to right, #ffffff 0%, rgb(186, 188, 255) 50%, #b1b1ff 50%, #ffffff 100%); 
+}
+footer{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin: center;
+    color: black;
+    font-size: xx-large;
+    text-decoration: none;
+    background: linear-gradient(to right, #ace2ff 0%, rgb(255, 255, 255) 50%, #ffffff 50%, #b6e8ff 100%); 
+    
+}
+
+h3 {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+h4 {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+text-align: center;
+ justify-content: space-between;
+gap: 20px; /* Adjust the pixel value as needed */
+}
+
+article{
+align-items: center;
+text-align: center;
+justify-content: space-between;
+flex-direction: row;
+flex-wrap: nowrap;
+gap: 20px; /* Adjust the pixel value as needed */
+}
+html{
+     background: linear-gradient(to right, #a9d6fa 0%, rgb(255, 255, 255) 50%, #ffffff 50%, #b0ffff 100%); 
+}
+
+ a{
+    text-decoration: none;
+    align-self: center;
+ }
+ a:link, a:visited, a:hover, a:active {
+  color: inherit; /* This makes the link color the same as its parent element's text color */
+  text-decoration: none; /* This removes the underline */
+}
+a:hover {
+	text-decoration: overline;
+	color: #0d0d0d;
+	text-shadow: -1px -1px #c2c2c2;
+}
+nav{
+text-decoration: none; /* Removes the underline */
+  color: inherit;      /* Makes link color the same as its parent text */
+  display: flex;
+    align-items: center;
+     justify-content: space-between;
+    gap: 20px; /* Adjust the pixel value as needed */
+}

@@ -2,18 +2,31 @@
 
 Do they best you can with this, talk with each other and help each other. Most colors and fonts are provided for you. Use adobe color to find the other colors from the sample image.*/
 body {
-background-color: rgba(255, 255, 255, 0.958);
+height: 100dvh;
+font-family: 'Times New Roman', Times, serif;
+background-color: linear-gradient (rgb(255, 255, 255), light rgb(159, 159, 255), mediumslateblue);
 text-align:center;
+display: flex;
+flex-direction: column;
 color: rgb(34, 34, 23);
-}
 
+}
+.multicolor-bg {
+    /* A two-color horizontal split */
+    background: linear-gradient(to right, #b0c3ff 0%, rgb(255, 255, 255) 50%, #ffffff 50%, #a0b4fc 100%);
+    height: 200px; /* Example height */
+    width: 100%;
+}
+.multicolor-bg {
+       background: linear-gradient(to right, #a9d6fa 0%, rgb(255, 255, 255) 50%, #ffffff 50%, #adc4ff 100%,rgb(255, 255, 255));
+}
 h1 {
 background-color: rgb(149, 176, 255);
 text-decoration: none;
 text-align: center;
 color: rgb(0, 0, 0);
 border:thin;
-font-family: 'Times New Roman', Times, serif;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
 margin: center;
 font-size: 60px;
 font-weight: bolder;
@@ -44,6 +57,7 @@ div a {
     text-decoration: none;
     font-size: medium;
     text-align: center;
+    border: none;
 }
 ul {
   list-style-type: none;
@@ -63,7 +77,7 @@ color: rgb(0, 0, 0);
 text-decoration: none;
 }
 nav {
-    background-color: rgb(200, 200, 255);
+    background-color: rgb(188, 216, 255);
     color: black;
     border: thin;
     text-decoration: none;
@@ -72,5 +86,126 @@ nav {
     padding: 20px; /* Adds space around the content, inside the border */
     margin: 15px; /* Adds space outside the border, from other elements */
     border-radius: 10px; /* Rounds the corners of the border */
+   
+text-decoration: none; /* Removes the underline */
+  color: inherit;      /* Makes link color the same as its parent text */
+  display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the pixel value as needed */
 }
+
+nav{
+text-decoration: none; /* Removes the underline */
+color: inherit;      /* Makes link color the same as its parent text */
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+gap: 20px; /* Adjust the pixel value as needed */
+}
+
+p {
+text-decoration: none;
+text-align: center;
+color-scheme: inherit;
+color:black;
+font-family:'Times New Roman', Times, serif;
+font-size: medium;
+margin: center;
+font-weight: bold;
+}
+header{
+text-align: center;
+text-decoration: none;
+text-align: center;
+color-scheme: inherit;
+color:black;
+font-family:'Times New Roman', Times, serif;
+font-size: medium;
+margin: center;
+font-weight: bold;
+ background: linear-gradient(to right, #a9d6fa 0%, rgb(255, 255, 255) 50%, #ffffff 50%, #adc4ff 100%,rgb(255, 255, 255));
+   color: black;
+    border: thin;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid rgb(72, 72, 72); /* Adds a solid black border */
+    padding: 20px; /* Adds space around the content, inside the border */
+    margin: 15px; /* Adds space outside the border, from other elements */
+    border-radius: 10px; /* Rounds the corners of the border */
+}
+footer{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin: center;
+    color: black;
+          background: linear-gradient(to right, #a9d6fa 0%, rgb(255, 255, 255) 50%, #ffffff 50%, #adc4ff 100%,rgb(255, 255, 255));
+}
+
+section{
+    text-align: center;
+     background: linear-gradient(to right, #a9d6fa 0%, rgb(255, 255, 255) 50%, #ffffff 50%, #adc4ff 100%,rgb(255, 255, 255));
+}
+html{
+     background: linear-gradient(to right, #a9d6fa 0%, rgb(255, 255, 255) 50%, #ffffff 50%, #adc4ff 100%,rgb(255, 255, 255)); 
+}
+.Img{
+   /* background-color: antiquewhite; */
+   text-align: center;
+}
+img.remove-background {
+  mix-blend-mode: multiply;
+  background-color:antiquewhite;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit; /* This makes the link color the same as its parent element's text color */
+  text-decoration: none; /* This removes the underline */
+}
+a:hover {
+	text-decoration: overline;
+	color: #0d0d0d;
+	text-shadow: -1px -1px #c2c2c2;
+}
+
+
+
+
+.container {
+    width: 100%;
+    overflow: hidden; /* Hides the text when it is outside the container */
+    background-color: #b6cafd;
+    padding: 10px 0;
+    border: none;
+    text-decoration: none;
+    border-style: none;
+    border: none;
+}
+
+.moving-text {
+    /* Apply the animation */
+    animation-name: marquee-animation;
+    animation-duration: 90s; /* Adjust speed as needed */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; /* Makes it loop forever */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    display: inline-block;
+    padding-left: 100%; /* Start the text off-screen to the right */
+}
+
+/* Define the animation movement */
+@keyframes marquee-animation {
+    0% {
+        transform: translateX(0); /* Initial position */
+    }
+    100% {
+        transform: translateX(-100%); /* Moves left by its own width */
+    }
+}
+
 
